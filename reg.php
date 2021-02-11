@@ -22,10 +22,14 @@
   <fieldset>
     <legend>Registation form</legend>
     <div class="form-group">
-      <label for="exampleInputEmail1">Name</label>
-      <input type="test" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
-      
-    </div>
+      <label for="exampleInputEmail1">First Name</label>
+      <input type="test" class="form-control" id="example-text-input"  placeholder="Enter First Name">
+     </div> <br>
+
+     <div class="form-group">
+      <label for="exampleInputEmail1">Last Name</label>
+      <input type="test" class="form-control" id="example-text-input" aria-describedby="emailHelp" placeholder="Enter Last Name">
+     </div><br>
     
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>

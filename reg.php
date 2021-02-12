@@ -16,6 +16,21 @@
 
 <body>
 
+<div>
+  <?php
+  if(isset($_POST['submit'])){
+    
+    echo "User submitted";
+  }
+
+
+
+  ?>
+
+
+
+</div>
+
 
 <form>
  <div class="container">
@@ -23,23 +38,23 @@
     <legend>Registation form</legend>
     <div class="form-group">
       <label for="exampleInputEmail1">First Name</label>
-      <input type="test" class="form-control" id="example-text-input"  placeholder="Enter First Name">
+      <input type="test" class="form-control" id="example-text-input" name="first_name" placeholder="Enter First Name" required>
      </div> <br>
 
      <div class="form-group">
       <label for="exampleInputEmail1">Last Name</label>
-      <input type="test" class="form-control" id="example-text-input" aria-describedby="emailHelp" placeholder="Enter Last Name">
+      <input type="test" class="form-control" id="example-text-input" aria-describedby="emailHelp" name="last_name" placeholder="Enter Last Name" required>
      </div><br>
     
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email" required>
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div><br>
 
     <div class="form-group">
       <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" required>
     </div><br>
     
    
@@ -66,7 +81,7 @@
     </fieldset>
 
     
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
   </fieldset>
   </div>
 </form>
